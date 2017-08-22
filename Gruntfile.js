@@ -8,8 +8,11 @@ module.exports = function(grunt) {
         separator: ';',
       },
       dist: {
-        src: ['app/collections/*.js'],
-        dest: 'dist/built.js',
+        src: [
+          'public/client/**/*.js',
+          'public/lib/**/*.js'
+        ],
+        dest: 'public/dist/built.js',
       },
     },
 
